@@ -13,6 +13,7 @@ using namespace std;
 int main()
 {
 	//First, initialize the array that will be considered the "data" we are interested in
+	//100 is used, but could be replaced by any convenient amount
 
 	int array[100];
 	//Seed is time program is run
@@ -20,9 +21,10 @@ int main()
 
 	cout << "Here is the data we are interested in: " << endl;
 
-	//Fill each index of the array with a random number betwee 1 and 101, randomized by the time generated
+	//Fill each index of the array with a random number between 1 and 1001, randomized by the time generated
 	for (int i = 0; i < 100; i++)
 	{
+		//1000 is used so there is more selection and difference between the integers in the array 
 		array[i] = (rand() % 1000) + 1;
 		cout << array[i] << ", ";
 	}
